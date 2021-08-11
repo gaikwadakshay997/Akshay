@@ -1,0 +1,52 @@
+#include<stdio.h>
+
+int main()
+{
+
+    int a,b;
+    int c;
+
+    printf("enter 1 for addition and 2 for substraction");
+
+    printf("\n enter your choice:");
+    scanf("%d",&c);
+
+    switch (c)
+    {
+    case 1:
+        printf("\n enter any 2 numbers:");
+        scanf("%d%d",&a,&b);
+
+        printf("\n addition is:%d",a+b);
+        break;
+
+
+    case 2:
+        printf("\n enter any 2 numbers:");
+        scanf("%d%d",&a,&b);
+
+        printf("\n substraction is:%d",a-b);
+        break;
+
+    default:
+        printf("\n wrong choice:");
+        break;
+    }
+    return 0;
+}
+
+O/P - 
+1)enter 1 for addition and 2 for substraction
+ enter your choice:1
+
+ enter any 2 numbers:10 10
+
+ addition is:20
+
+
+2) enter 1 for addition and 2 for substraction
+ enter your choice:2
+
+ enter any 2 numbers:100 20
+
+ substraction is:80
