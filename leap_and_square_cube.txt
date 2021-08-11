@@ -1,0 +1,59 @@
+#include<stdio.h>
+
+int main()
+{
+
+    int a,year;
+    int c;
+
+    printf("\n enter 1 for leap year and 2 for square cube:");
+
+    printf("\n enter your choice:");
+    scanf("%d",&c);
+
+    switch (c)
+    {
+    case 1:
+        printf("\n enter any year:");
+        scanf("%d",&year);
+
+        if(year%4==0)
+        {
+            printf("\n %d is a leap year",year);
+            break;
+        }
+        else
+        {
+            printf("\n %d is not a leap year",year);
+            break;
+        }
+
+    case 2:
+        printf("\n enter any number:");
+        scanf("%d",&a);
+
+        printf("\n square is %d:",a*a);
+        printf("\n cube is %d:",a*a*a);
+
+    }
+    return 0;
+}
+
+
+O/P - 		
+1) enter 1 for leap year and 2 for square cube:
+ enter your choice:1
+
+ enter any year:2000
+
+ 2000 is a leap year
+
+2)
+ enter 1 for leap year and 2 for square cube:
+ enter your choice:2
+
+ enter any number:2
+
+ square is 4:
+ cube is 8:
+
